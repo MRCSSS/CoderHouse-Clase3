@@ -6,9 +6,9 @@ function NavBar() {
                     <h1>MTC</h1>
                 </a>
                 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navBarMenu">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true" />
+                    <span aria-hidden="true" />
+                    <span aria-hidden="true" />
                 </a>
             </div>
             <div id="navBarMenu" class="navbar-menu">
