@@ -1,37 +1,40 @@
+import CartWidget from "./CartWidget";
+
 function NavBar() {
     return (
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-                <a class="navbar-item" href="#">
+        <nav className="navbar" role="navigation" aria-label="main navigation">
+            <div className="navbar-brand">
+                <a className="navbar-item" href="#">
                     <h1>MTC</h1>
                 </a>
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navBarMenu">
+                <a role="button" className="navbar-burger column" aria-label="menu" aria-expanded="true" data-target="navBarMenu">
                     <span aria-hidden="true" />
                     <span aria-hidden="true" />
                     <span aria-hidden="true" />
                 </a>
             </div>
-            <div id="navBarMenu" class="navbar-menu">
-                <div class="navbar-start">
-                    <a class="navbar-item">Home</a>
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link">Servicios</a>
-                        <div class="navbar-dropdown">
-                            <a class="navbar-item">Rutinas de ejecicios</a>
-                            <a class="navbar-item">Dietas</a>
-                            <a class="navbar-item">Paquetes</a>
+            <div id="navBarMenu" className="navbar-menu">
+                <div className="navbar-start">
+                    <a className="navbar-item">Home</a>
+                    <div className="navbar-item has-dropdown is-hoverable">
+                        <a className="navbar-link">Servicios</a>
+                        <div className="navbar-dropdown">
+                            <a className="navbar-item">Rutinas de ejecicios</a>
+                            <a className="navbar-item">Dietas</a>
+                            <a className="navbar-item">Paquetes</a>
                         </div>
                     </div>
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link">Más</a>
-                        <div class="navbar-dropdown">
-                            <a class="navbar-item">Sobre nosotros</a>
-                            <a class="navbar-item">Contacto</a>
+                    <div className="navbar-item has-dropdown is-hoverable">
+                        <a className="navbar-link">Más</a>
+                        <div className="navbar-dropdown">
+                            <a className="navbar-item">Sobre nosotros</a>
+                            <a className="navbar-item">Contacto</a>
                         </div>
                     </div>
-                    <a class="navbar-item">Promociones</a>
+                    <a className="navbar-item">Promociones</a>
                 </div>
             </div>
+            <CartWidget number={2}/>
         </nav>
     );
   }
